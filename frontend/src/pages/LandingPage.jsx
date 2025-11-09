@@ -15,7 +15,8 @@ export default function LandingPage({ onLogin }) {
     student_id: '', 
     name: '', 
     email: '', 
-    password: '' 
+    password: '',
+    role: 'student'
   });
   const [loading, setLoading] = useState(false);
 
