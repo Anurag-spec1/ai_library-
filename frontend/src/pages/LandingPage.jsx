@@ -143,6 +143,19 @@ export default function LandingPage({ onLogin }) {
                       required
                     />
                   </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="role">Role</Label>
+                    <select
+                      id="role"
+                      data-testid="register-role-select"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                      value={registerData.role}
+                      onChange={(e) => setRegisterData({ ...registerData, role: e.target.value })}
+                    >
+                      <option value="student">Student</option>
+                      <option value="librarian">Librarian</option>
+                    </select>
+                  </div>
                   <Button type="submit" className="w-full" disabled={loading} data-testid="register-submit-button">
                     {loading ? 'Loading...' : 'Register'}
                   </Button>

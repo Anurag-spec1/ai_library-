@@ -2,7 +2,6 @@
 
 # IDE and editors
 .idea/
-.vscode/
 
 # Dependencies
 node_modules/
@@ -78,3 +77,4 @@ agenthub/agents/youtube/db
 
 # Mobile development
 android-sdk/ 
+config.bat
